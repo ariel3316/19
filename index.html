@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחירון שירותי AI - Ariel AI</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6C5CE7;
+            --secondary-color: #FFA502;
+            --accent-color: #FF6B6B;
+            --background-color: #F9F9F9;
+            --card-color: #FFFFFF;
+            --text-color: #2D3436;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .pricing-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pricing-card {
+            background-color: var(--card-color);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        .pricing-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        .pricing-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        .pricing-price {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: var(--accent-color);
+        }
+        .pricing-card ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+        }
+        .pricing-card li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .pricing-card li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+        .pricing-button {
+            display: block;
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            border-radius: 0 0 15px 15px;
+        }
+        .pricing-button:hover {
+            background-color: var(--accent-color);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 165, 2, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 165, 2, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 165, 2, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://arielai.co.il/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fmamahood-be367.appspot.com%2Fo%2FexpertFiles%252Fb10XkBgWHvXPL5ac4Xez5N8M3gA3%252Fwebsite%252F1716210729449-DALL%25C2%25B7E%25202024-05-20%252016.11.45%2520-%2520A%2520logo%2520for%2520a%2520business%2520named%2520%27Ariel%2520AI%27%2520that%2520focuses%2520on%2520AI%2520usage%2520tutorials%2520and%2520news%2520on%2520social%2520media.%2520The%2520logo%2520should%2520be%2520modern%2520and%2520tech-savvy%252C%2520featurin.webp%3Falt%3Dmedia%26token%3D6025a106-daee-4374-b95d-f73cec6765e3&w=640&q=75" alt="Ariel AI Logo" class="logo">
+        <h1>מחירון שירותי AI</h1>
+    </div>
+    
+    <div class="container">
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-film"></i></div>
+                    <h2 class="pricing-title">סרטון אנימציה AI</h2>
+                    <div class="pricing-price">₪5,000 - ₪15,000</div>
+                </div>
+                <ul>
+                    <li>עד דקה, במקרים קיצוניים עד דקה וחצי</li>
+                    <li>אנימציה באיכות גבוהה מאוד</li>
+                    <li>עד 3 דמויות</li>
+                    <li>אפקטים מיוחדים וסצנות מורכבות</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+            
+            <div class="pricing-card pulse">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-user-secret"></i></div>
+                    <h2 class="pricing-title">דיפ-פייק AI</h2>
+                    <div class="pricing-price">₪7,000 - ₪20,000</div>
+                </div>
+                <ul>
+                    <li>עד דקה</li>
+                    <li>רמת דיוק גבוהה ביותר</li>
+                    <li>אפשרות לדמות פרטית או ציבורית</li>
+                    <li>רקע ותפאורה מותאמים</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-video"></i></div>
+                    <h2 class="pricing-title">פרסומת ריאליסטית AI</h2>
+                    <div class="pricing-price">₪10,000 - ₪25,000</div>
+                </div>
+                <ul>
+                    <li>עד דקה</li>
+                    <li>שחקנים וירטואליים או סביבות מציאותיות</li>
+                    <li>רמת פירוט וריאליזם גבוהה</li>
+                    <li>התאמה מלאה לצרכי הלקוח</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-music"></i></div>
+                    <h2 class="pricing-title">קליפ מוזיקלי AI</h2>
+                    <div class="pricing-price">₪15,000 - ₪40,000</div>
+                </div>
+                <ul>
+                    <li>עד 4 דקות</li>
+                    <li>אנימציה או וידאו ריאליסטי</li>
+                    <li>סנכרון שפתיים של זמרים וירטואליים</li>
+                    <li>אפקטים ויזואליים מרהיבים</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-robot"></i></div>
+                    <h2 class="pricing-title">צ'אט בוט AI</h2>
+                    <div class="pricing-price">₪20,000 - ₪50,000</div>
+                </div>
+                <ul>
+                    <li>אינטגרציה מלאה עם WhatsApp</li>
+                    <li>יכולות מתקדמות לשירות לקוחות</li>
+                    <li>התאמה אישית לצרכי העסק</li>
+                    <li>אינטגרציה עם מערכות אחרות</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <div class="pricing-icon"><i class="fas fa-camera-retro"></i></div>
+                    <h2 class="pricing-title">תמונות תדמית AI</h2>
+                    <div class="pricing-price">₪1,000 - ₪3,000</div>
+                    <p>לאדם</p>
+                </div>
+                <ul>
+                    <li>יצירת מודל AI אישי</li>
+                    <li>מגוון תמונות באיכות גבוהה</li>
+                    <li>התאמה לצרכי מיתוג ושיווק</li>
+                    <li>אפשרויות רקע ותפאורה מגוונות</li>
+                </ul>
+                <a href="#" class="pricing-button">הזמן עכשיו</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
